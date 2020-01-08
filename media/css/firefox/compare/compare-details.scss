@@ -7,6 +7,8 @@ $image-path: "/media/protocol/img";
 
 @import "../../../protocol/css/includes/lib";
 @import "../../../protocol/css/components/hero";
+@import '../../../protocol/css/components/menu-list';
+
 
 /* -------------------------------------------------------------------------- */
 // Hero
@@ -115,5 +117,19 @@ $image-path: "/media/protocol/img";
         @media #{$mq-md} {
             width: 320px;
         }
+    }
+}
+
+// menu list
+.mzp-t-firefox .mzp-t-cta .mzp-c-menu-list-title {
+    font-weight: normal;
+}
+
+.bottom-download-cta {
+    margin-top: $layout-lg;
+
+    .download-button {
+        display: block;
+        margin: 0 auto;
     }
 }

@@ -1562,6 +1562,12 @@
         "js/newsletter/form-protocol.js"
       ],
       "name": "firefox_ios_testflight"
+    },
+    {
+      "files": [
+        "js/firefox/compare-details.js"
+      ],
+      "name": "firefox_compare_details"
     }
   ]
 }

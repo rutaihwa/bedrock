@@ -131,6 +131,8 @@
         {% endtrans %}
       </p>
 
+      {% include '/firefox/compare/includes/download-menu-list.html' %}
+
     </section>
 
     <section class="compare-section-utility">
@@ -237,6 +239,8 @@
         {% endtrans %}
       </p>
 
+      {% include '/firefox/compare/includes/download-menu-list.html' %}
+
     </section>
 
     <section class="compare-section-portability">
@@ -294,6 +298,8 @@
         {% endtrans %}
       </p>
 
+      {% include '/firefox/compare/includes/download-menu-list.html' %}
+
     </section>
 
     <section class="compare-section-overall">
@@ -313,7 +319,16 @@
         {% endtrans %}
       </p>
 
+      <aside class="bottom-download-cta">
+        {{ download_firefox(dom_id='download-bottom', alt_copy=_('Download Firefox'), download_location='bottom cta') }}
+      </aside>
+
     </section>
   </article>
 </div>
 {% endblock %}
+
+{% block js %}
+  {{ js_bundle('firefox_compare_details') }}
+{% endblock %}
+
